@@ -1,0 +1,83 @@
+/* src/styles/Dashboard.css */
+
+.dashboard {
+    padding: 20px;
+  }
+  
+  .dashboard h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-overview {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .stat-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+  }
+  
+  .stat-box h3 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .stat-box p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .dashboard-reports h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .dashboard-reports ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .dashboard-reports ul li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dashboard-reports ul li:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .stat-box {
+      flex: 1 1 calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .stat-box {
+      flex: 1 1 100%;
+    }
+  
+    .dashboard h2 {
+      font-size: 1.5rem;
+    }
+  
+    .dashboard-overview {
+      display: block;
+    }
+  }
+  
